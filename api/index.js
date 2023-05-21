@@ -9,6 +9,7 @@ const corsOptions = require ('./config/corsoptions');
 const connectDB = require ('./config/dbConn');
 const multer = require ('multer');
 const path = require('path');
+const cors=require('cors')
 const PORT = process.env.PORT || 3500;
 
 dotenv.config();
