@@ -5,13 +5,18 @@ const mongoose = require ('mongoose');
 const authRoute = require ('./routes/auth');
 const userRoute = require ('./routes/users');
 const postRoute = require ('./routes/posts');
-const categoryRoute = require ('./routes/categories');
+const categoryRoute = require('./routes/categories');
+const corsOptions = require ('./config/corsoptions');
+const connectDB = require ('./config/dbConn');
 const multer = require ('multer');
-const path = require ('path');
+const path = require('path');
+const PORT = process.env.PORT || 3500;
 
 dotenv.config ();
 
 // Middleware
+app.use (cors (corsOptions));
+
 app.use (express.json ());
 app.use ('/images', express.static (path.join (__dirname, '/images')));
 
@@ -50,6 +55,6 @@ app.use ('/api/posts', postRoute);
 app.use ('/api/categories', categoryRoute);
 
 // Start the server
-app.listen (8000, () => {
+app.listen (PORT, () => {
   console.log ('Backend is running');
 });
