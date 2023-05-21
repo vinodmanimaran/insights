@@ -10,7 +10,7 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PF = "https://blog-api-cvnk.onrender.com/api/images/";
+  const PF = "https://insightsphere.netlify.app/images/";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
