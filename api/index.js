@@ -51,7 +51,7 @@ const upload = multer({ storage: storage });
 
 // API endpoint for file upload
 app.post('/api/upload', upload.single('file'), (req, res) => {
-  res.status(200).json('File has been uploaded');
+  res.status(200).json('File has been uploaded')
 });
 
 // API routes
