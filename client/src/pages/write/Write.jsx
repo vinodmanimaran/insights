@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import "./write.css";
 import axios from "axios";
+import {axiosInstance} from '../../../config';
+
 import { Context } from "../../context/Context";
 
 export default function Write() {
@@ -23,7 +25,7 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("/upload", data);
+        await axiosInstance.post("/upload", data);
       } catch (err) {}
     }
     try {

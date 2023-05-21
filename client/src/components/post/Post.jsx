@@ -3,7 +3,7 @@ import moment from 'moment';
 import './post.css'
 
 export default function Post({post}) {
-  const PF = 'https://blog-api-0jfo.onrender.com/images/';
+  const PF = 'http://localhost:4000/images/';
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
