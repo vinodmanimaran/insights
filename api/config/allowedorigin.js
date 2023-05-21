@@ -1,3 +1,3 @@
-const allowedOrigins = ['https://insights-client.onrender.com/'];
+const allowedOrigins = ['https://insights-n5v6.onrender.com/'];
 
 module.exports = allowedOrigins;
