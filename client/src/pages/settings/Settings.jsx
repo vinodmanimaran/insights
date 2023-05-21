@@ -13,7 +13,7 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "https://blog-api-0jfo.onrender.com/api/images/"
+  const PF = "https://blog-api-cvnk.onrender.com/api/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault();
