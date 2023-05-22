@@ -31,8 +31,8 @@ export default function Write() {
       }
     }
     try {
-      const res = await axiosInstance.post("/posts", newPost);
-      navigate("/post/" + res.data._id);
+      const res = await axios.post("https://blog-api-0jfo.onrender.com/api/posts", newPost);
+      navigate("https://blog-api-0jfo.onrender.com/api/post/:id" + res.data._id);
     } catch (err) {
       console.log(err);
     }
