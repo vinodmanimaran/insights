@@ -1,3 +1,3 @@
-const allowedOrigins = ['https://insightsphere.netlify.app'];
+const allowedOrigins = ['https://insightsphere.onrender.com/'];
 
 module.exports = allowedOrigins;
