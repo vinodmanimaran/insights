@@ -3,7 +3,7 @@ import moment from 'moment';
 import './post.css'
 
 export default function Post({post}) {
-  const PF = 'https://insightsphere.netlify.app/images/';
+  const PF = 'https://blog-api-cvnk.onrender.com/images/';
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
