@@ -29,7 +29,7 @@ export default function Write() {
     }
     try {
       const res = await axiosInstance.post("/posts", newPost);
-      window.location.replace("/post/" + res.data._id);
+      window.location.replace("/post" + res.data._id);
     } catch (err) {}
   };
   return (
