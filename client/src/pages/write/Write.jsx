@@ -28,8 +28,8 @@ export default function Write() {
       } catch (err) {}
     }
     try {
-      const res = await axiosInstance.post("/posts", newPost);
-      window.location.replace("/post" + res.data._id);
+   const res = await axiosInstance.post("/posts", newPost);
+      window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };
   return (
