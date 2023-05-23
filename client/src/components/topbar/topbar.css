@@ -71,9 +71,6 @@
   cursor: pointer;
   margin-left: 15px;
 }
-
-
-
 @media only screen and (max-width: 767px) {
   .topLeft,
   .topRight {
@@ -86,21 +83,27 @@
   }
   
   .topCenter {
-    display: none;
+    display: flex;
+    flex: 2;
+    justify-content: center;
   }
   
-  .topIcon {
-    margin-right: 5px;
-    font-size: 18px;
+  .topList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .topListItem {
+    margin: 0 5px;
   }
   
   .topImg {
     width: 30px;
     height: 30px;
-  }
-  
-  .topList {
-    display: none;
   }
   
   .topSearchIcon {
