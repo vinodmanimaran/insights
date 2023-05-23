@@ -43,7 +43,7 @@
   }
 
   .headerImg {
-     width: 90vw; /* Use vw units for responsive image width */
+     width: 100vw; /* Use vw units for responsive image width */
     height: auto;
     margin-bottom: 1rem;
   }
