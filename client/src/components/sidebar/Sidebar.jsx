@@ -2,7 +2,6 @@ import {axiosInstance} from '../../config';
 import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import './sidebar.css';
-import SideImg from '../../assets/IMG_20210823_164653-01.jpeg'
 
 export default function Sidebar () {
   const [cats, setCats] = useState ([]);
@@ -19,7 +18,7 @@ export default function Sidebar () {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-        src={SideImg}
+        src="../../assets/IMG_20210823_164653-01.jpeg"
           alt="" className='Side'
         />
         <p>
