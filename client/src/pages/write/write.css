@@ -94,3 +94,57 @@
   transform: scale(1.1);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 767px) {
+  .write {
+    padding-top: 20px;
+  }
+
+  .writeImg {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .writeForm {
+    margin-top: 10px;
+  }
+
+  .writeFormGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .writeIcon {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .writeInput {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .writeText {
+    font-size: 16px;
+    height: auto;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .writeSubmit {
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+}
