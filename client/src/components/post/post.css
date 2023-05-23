@@ -54,3 +54,44 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .post {
+    width: 100%;
+    margin: 0px 10px 20px 10px;
+  }
+
+  .postImg {
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  .postInfo {
+    align-items: flex-start;
+  }
+
+  .postCat {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .postTitle {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .postDate {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .postDesc {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+    -webkit-line-clamp: 3;
+  }
+}
