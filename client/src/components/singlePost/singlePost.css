@@ -97,3 +97,53 @@
   align-self: flex-end;
   margin-top: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .singlePost {
+    flex: 1;
+  }
+  
+  .singlePostWrapper {
+    padding: 10px;
+  }
+  
+  .singlePostImg {
+    height: 200px;
+  }
+  
+  .singlePostTitle {
+    font-size: 24px;
+    margin: 5px;
+  }
+  
+  .singlePostTitleInput {
+    font-size: 24px;
+    margin: 5px;
+  }
+  
+  .singlePostEdit {
+    font-size: 14px;
+  }
+  
+  .singlePostInfo {
+    font-size: 14px;
+  }
+  
+  .singlePostDesc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .singlePostDesc::first-letter {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  
+  .singlePostDescInput {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .singlePostButton {
+    margin-top: 10px;
+  }
+}
