@@ -71,3 +71,40 @@
   cursor: pointer;
   margin-left: 15px;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+  .topLeft,
+  .topRight {
+    flex: 1;
+  }
+  
+  .topLeft h3 {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .topCenter {
+    display: none;
+  }
+  
+  .topIcon {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  .topImg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .topList {
+    display: none;
+  }
+  
+  .topSearchIcon {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
