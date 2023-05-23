@@ -29,11 +29,11 @@
   text-align: center;
 }
 
-.sidebarItem>img {
+.sidebarItem > img {
   margin-top: 15px;
 }
 
-.sidebarItem>p {
+.sidebarItem > p {
   padding: 30px;
 }
 
@@ -61,4 +61,38 @@
   font-size: 16px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  .sidebarTitle {
+    margin: 8px;
+    padding: 4px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .sidebarItem > img {
+    margin-top: 10px;
+  }
+
+  .sidebarItem > p {
+    padding: 20px;
+  }
+
+  .sidebarListItem {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .sidebarSocial {
+    margin-top: 10px;
+    width: 200px;
+  }
 }
