@@ -1,3 +1,3 @@
-const allowedOrigins = ['https://insightsphere.vercel.app', 'http://localhost:3000'];
+const allowedOrigins = ['https://insightsphere.vercel.app'];
 
 module.exports = allowedOrigins;
